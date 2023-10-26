@@ -5,6 +5,7 @@
 body{
     width: 100%;
     height: 100vh;
+    background-image: url(sky.jpg);
     position: relative;
     overflow: hidden;
 }
@@ -15,16 +16,112 @@ background-color: rgb(7, 236, 53);
 position: absolute;
 bottom: 0;
 }
-#character{
-    
-    background-repeat: no-repeat;
-    background-size: 50px;
+
+
+#character {
     width: 50px;
     height: 100px;
     position: absolute;
-    bottom: 220px;
+    bottom: 223px; /* Adjust the initial position as needed */
     right: calc(100% - 100px);
+    /*background-image: url("Untitled design (12).png");*/
+    background-size: cover;
 }
+
+.obstacle {
+    width: 70px;
+    height: 70px;
+    
+    position: absolute;
+    bottom: 176px;
+    right: 0;
+  }
 img{
     height: 30vh;
 }
+
+.toto{
+    height: 150px;
+    width: 110px;
+}
+
+
+.cloud {
+    background-image: url("https://i.pinimg.com/originals/8a/49/4b/8a494b1e5e26314180a1ded2c8d0a6a5.png");
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+    margin: 20px;
+    position: fixed;
+  }
+  
+  .cloud1 {
+    animation: animateCloud 35s linear infinite;
+    transform: scale(0.75);
+  }
+  
+  .cloud2 {
+    animation: animateCloud 20s linear infinite;
+    transform: scale(1);
+  }
+  
+  .cloud3 {
+    animation: animateCloud 30s linear infinite;
+    transform: scale(1.25);
+  }
+  
+  .cloud4 {
+    animation: animateCloud 18s linear infinite;
+    transform: scale(1.5);
+  }
+  
+  @keyframes animateCloud {
+    0% {
+      margin-left: -1000px;
+    }
+  
+    100% {
+      margin-left: 100%;
+    }
+  }
+  
+  .cloud1 {
+    background-image: url("https://i.pinimg.com/originals/8a/49/4b/8a494b1e5e26314180a1ded2c8d0a6a5.png");
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+    margin: 20%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cloud1 {
+    animation: animateCloud 35s linear infinite;
+    transform: scale(0.75);
+  }
+  
+  .cloud2 {
+    animation: animateCloud 20s linear infinite;
+    transform: scale(1);
+  }
+  
+  .cloud3 {
+    animation: animateCloud 30s linear infinite;
+    transform: scale(1.25);
+  }
+  
+  .cloud4 {
+    animation: animateCloud 18s linear infinite;
+    transform: scale(1.5);
+  }
+  
+  @keyframes animateCloud {
+    0% {
+      margin-left: -100px;
+    }
+  
+    100% {
+      margin-left: 100%;
+    }
+  }
